@@ -245,6 +245,36 @@
     font-size: 18px;
   }
 
+  /* 日历徽章 */
+  .date-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #8b1a1a, #a52a2a);
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(139, 26, 26, 0.25);
+    overflow: hidden;
+    margin: 8px 0 12px;
+    width: 68px;
+  }
+  .date-badge-month {
+    background: rgba(212, 175, 55, 0.15);
+    color: #d4af37;
+    font-size: 13px;
+    padding: 4px 0;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: 500;
+  }
+  .date-badge-day {
+    background: #fff;
+    color: #8b1a1a;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 2px 0;
+    text-align: center;
+    line-height: 1.2;
+    font-family: "Georgia", "Times New Roman", serif;
+  }
+
   /* 详情卡片 */
   .detail-card {
     background: #fff;
@@ -395,6 +425,10 @@
 
         <div class="invite-text">
           <p>谨定于</p>
+          <div class="date-badge">
+            <div class="date-badge-month">6月</div>
+            <div class="date-badge-day">27</div>
+          </div>
           <p>
             <span class="highlight">公历 2026年6月27日</span>
             （星期六）
