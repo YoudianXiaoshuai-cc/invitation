@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>陈先庆六十华诞邀请函</title>
+
+<!-- Open Graph / WeChat / 社交分享 meta tags -->
+<meta property="og:title" content="陈先庆六十华诞邀请函">
+<meta property="og:description" content="公历2026年6月27日 · 大碗菜院子吉祥如意厅 · 恭候阖府光临">
+<meta property="og:image" content="https://YoudianXiaoshuai-cc.github.io/invitation/thumbnail.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://YoudianXiaoshuai-cc.github.io/invitation/">
+<meta property="og:site_name" content="陈先庆六十华诞邀请函">
+<meta property="og:locale" content="zh_CN">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="陈先庆六十华诞邀请函">
+<meta name="twitter:description" content="公历2026年6月27日 · 大碗菜院子吉祥如意厅 · 恭候阖府光临">
+<meta name="twitter:image" content="https://YoudianXiaoshuai-cc.github.io/invitation/thumbnail.png">
+
+<!-- 微信专用标签 -->
+<meta itemprop="name" content="陈先庆六十华诞邀请函">
+<meta itemprop="description" content="公历2026年6月27日 · 大碗菜院子吉祥如意厅 · 恭候阖府光临">
+<meta itemprop="image" content="https://YoudianXiaoshuai-cc.github.io/invitation/thumbnail.png">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    background: #1a0a0a;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  /* ===== 翻页容器 ===== */
+  .flip-container {
+    perspective: 1200px;
+    width: 100%;
+    min-height: 100vh;
+  }
+  .flip-card {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    transform-style: preserve-3d;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .flip-card.flipped {
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+  }
+
+  /* ===== 正面（封面） ===== */
+  .flip-front {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    min-height: 100vh;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    background: linear-gradient(180deg, #3a1518 0%, #5a2228 35%, #6e2d34 65%, #3a1518 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 24px;
+    overflow: hidden;
+    z-index: 2;
+  }
+
+  /* 金色光晕 */
+  .flip-front::before {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px; height: 320px;
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.12) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: glowPulse 3s ease-in-out infinite;
+  }
+  @keyframes glowPulse {
+    0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.5; }
+    50%      { transform: translate(-50%, -50%) scale(1.15); opacity: 1; }
+  }
+
+  /* 金色边框圆 */
+  .cover-ring {
+    position: absolute;
+    width: 260px; height: 260px;
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    border-radius: 50%;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ringPulse 3s ease-in-out infinite;
+  }
+  .cover-ring:nth-child(2) {
+    width: 300px; height: 300px;
+    border-color: rgba(212, 175, 55, 0.12);
+    animation-delay: 0.5s;
+  }
+  @keyframes ringPulse {
+    0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.4; }
+    50%      { transform: translate(-50%, -50%) scale(1.05); opacity: 1; }
+  }
+
+  .cover-ornament {
+    color: rgba(212, 175, 55, 0.55);
+    font-size: 14px;
+    letter-spacing: 8px;
+    margin-bottom: 32px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .cover-char {
+    font-size: 88px;
+    font-weight: 400;
+    color: #d4af37;
+    text-shadow: 0 0 40px rgba(212, 175, 55, 0.35), 0 2px 4px rgba(0,0,0,0.5);
+    line-height: 1;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 8px;
+    font-family: "STKaiti", "KaiTi", "楷体", serif;
+  }
+
+  .cover-title {
+    font-size: 22px;
+    color: #f0e0c8;
+    font-weight: 600;
+    letter-spacing: 6px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 12px;
+  }
+
+  .cover-name {
+    font-size: 20px;
+    color: #d4af37;
+    font-weight: 500;
+    letter-spacing: 3px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 24px;
+  }
+
+  .cover-divider {
+    width: 60px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.6), transparent);
+    position: relative;
+    z-index: 1;
+    margin-bottom: 24px;
+  }
+
+  .cover-subtitle {
+    font-size: 15px;
+    color: rgba(240, 224, 200, 0.65);
+    letter-spacing: 4px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* 翻页提示 */
+  .flip-hint {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    text-align: center;
+    cursor: pointer;
+  }
+  .flip-hint-label {
+    font-size: 13px;
+    color: rgba(212, 175, 55, 0.75);
+    letter-spacing: 4px;
+    margin-bottom: 8px;
+    animation: hintPulse 2s ease-in-out infinite;
+    background: rgba(212, 175, 55, 0.1);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 30px;
+    padding: 8px 20px;
+  }
+  @keyframes hintPulse {
+    0%, 100% { opacity: 0.5; transform: scale(0.97); }
+    50%      { opacity: 1; transform: scale(1.03); }
+  }
+
+  /* ===== 背面（内容页） ===== */
+  .flip-back {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    min-height: 100vh;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    background: linear-gradient(180deg, #1a0a0a 0%, #fdf5e6 5%, #fdf5e6 95%, #1a0a0a 100%);
+    color: #3d2b1f;
+    overflow-y: auto;
+    z-index: 1;
+  }
+
+  .back-inner {
+    padding: 48px 28px 60px;
+  }
+
+  /* 金色横线 */
+  .back-inner::before {
+    content: '';
+    display: block;
+    width: 80%;
+    max-width: 300px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.5), transparent);
+    margin: 0 auto 40px;
+  }
+
+  /* 邀请文 */
+  .invite-text {
+    text-align: center;
+    line-height: 2.4;
+    font-size: 16px;
+    color: #5a3e2b;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+  }
+  .invite-text .highlight {
+    color: #8b1a1a;
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  /* 详情卡片 */
+  .detail-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 32px 24px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.06);
+    max-width: 400px;
+    margin: 0 auto 32px;
+    border: 1px solid rgba(212, 175, 55, 0.15);
+  }
+  .detail-row {
+    display: flex;
+    align-items: flex-start;
+    padding: 14px 0;
+    border-bottom: 1px solid #f0e6d2;
+  }
+  .detail-row:last-child { border-bottom: none; }
+  .detail-icon {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #8b1a1a, #a52a2a);
+    color: #d4af37;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+    margin-right: 14px;
+    margin-top: 2px;
+  }
+  .detail-label {
+    font-size: 12px;
+    color: #b8936e;
+    letter-spacing: 2px;
+    margin-bottom: 4px;
+  }
+  .detail-value {
+    font-size: 16px;
+    color: #3d2b1f;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+  .detail-value a {
+    color: #3d2b1f;
+    text-decoration: none;
+  }
+
+  /* 导航 */
+  .nav-section {
+    text-align: center;
+    margin-top: 36px;
+  }
+  .nav-title {
+    font-size: 14px;
+    color: #b8936e;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+  }
+  .nav-buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .nav-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 22px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .nav-btn:active { transform: scale(0.96); }
+  .nav-btn-gaode {
+    background: #fff;
+    color: #1677ff;
+    border: 1px solid #1677ff;
+    box-shadow: 0 2px 8px rgba(22,119,255,0.15);
+  }
+  .nav-btn-gaode:active { background: #e6f0ff; }
+  .nav-btn-baidu {
+    background: #fff;
+    color: #de3925;
+    border: 1px solid #de3925;
+    box-shadow: 0 2px 8px rgba(222,57,37,0.15);
+  }
+  .nav-btn-baidu:active { background: #fff0ee; }
+  .nav-icon {
+    width: 20px; height: 20px;
+  }
+
+  /* 底栏 */
+  .footer {
+    text-align: center;
+    padding: 40px 24px;
+    background: #1a0a0a;
+    color: rgba(245, 230, 200, 0.5);
+    font-size: 13px;
+    letter-spacing: 2px;
+    line-height: 2;
+  }
+  .footer .gold {
+    color: rgba(212, 175, 55, 0.7);
+  }
+
+  /* 响应式 */
+  @media (min-width: 768px) {
+    .cover-char { font-size: 108px; }
+    .back-inner { padding: 56px 48px 72px; }
+    .detail-card { padding: 40px 36px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ==================== 翻页容器 ==================== -->
+<div class="flip-container" id="flipContainer">
+
+  <div class="flip-card" id="flipCard">
+
+    <!-- 正面：封面 -->
+    <div class="flip-front" onclick="flip()">
+      <div class="cover-ring"></div>
+      <div class="cover-ring"></div>
+
+      <div class="cover-ornament">❖　恭　请　光　临　❖</div>
+      <div class="cover-char">福</div>
+      <div class="cover-title">六　十　华　诞</div>
+      <div class="cover-name">家父　陈先庆先生</div>
+      <div class="cover-divider"></div>
+      <div class="cover-subtitle">身心康泰　·　喜乐长安</div>
+
+      <div class="flip-hint" onclick="event.stopPropagation(); flip()">
+        <div class="flip-hint-label">点 击 翻 开 请 柬</div>
+      </div>
+    </div>
+
+    <!-- 背面：内容 -->
+    <div class="flip-back">
+      <div class="back-inner">
+
+        <div class="invite-text">
+          <p>谨定于</p>
+          <p>
+            <span class="highlight">公历 2026年6月27日</span>
+            （星期六）
+          </p>
+          <p style="margin-top:4px;">
+            农历 <span class="highlight">丙午年五月十三</span>
+          </p>
+          <p style="margin-top:12px;">
+            <span class="highlight">中午 12:30</span>　开席
+          </p>
+          <p style="margin-top:16px; font-size:15px; color:#8b6b4a;">
+            为家父庆祝六十华诞<br>
+            略备薄酒　恭候阖府光临
+          </p>
+        </div>
+
+        <div class="detail-card">
+          <div class="detail-row">
+            <div class="detail-icon">📍</div>
+            <div>
+              <div class="detail-label">宴 会 地 点</div>
+              <div class="detail-value">大碗菜院子 · 吉祥如意厅</div>
+            </div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-icon">🏠</div>
+            <div>
+              <div class="detail-label">详 细 地 址</div>
+              <div class="detail-value">郴州市北湖区石盖塘街道<br>石盖塘社区小黄家组老井边</div>
+            </div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-icon">📞</div>
+            <div>
+              <div class="detail-label">联 系 电 话</div>
+              <div class="detail-value"><a href="tel:17373158791">陈超 17373158791</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-section">
+          <div class="nav-title">—　一 键 导 航　—</div>
+          <div class="nav-buttons">
+            <a class="nav-btn nav-btn-gaode"
+               href="https://uri.amap.com/marker?position=112.97135,25.69267&name=大碗菜院子&callnative=1"
+               target="_blank">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              高德导航
+            </a>
+            <a class="nav-btn nav-btn-baidu"
+               href="https://api.map.baidu.com/marker?location=25.69267,112.97135&title=大碗菜院子&content=郴州市北湖区石盖塘街道石盖塘社区小黄家组老井边大碗菜院子&output=html&src=invitation"
+               target="_blank">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="10" r="3"/><path d="M12 2C7.58 2 4 5.58 4 10c0 6.63 8 14 8 14s8-7.37 8-14c0-4.42-3.58-8-8-8z"/></svg>
+              百度导航
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 底栏 -->
+      <div class="footer">
+        <p class="gold">❖</p>
+        <p>花甲之年　·　福寿双全</p>
+        <p style="font-size:12px; margin-top:8px;">
+          恭迎您与家人的光临<br>
+          共庆这美好时刻
+        </p>
+        <p style="margin-top:24px; font-size:12px; color:rgba(245,230,200,0.3);">
+          请帖由子女敬上
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  var flipped = false;
+  function flip() {
+    flipped = !flipped;
+    var card = document.getElementById('flipCard');
+    if (flipped) {
+      card.classList.add('flipped');
+    } else {
+      card.classList.remove('flipped');
+    }
+  }
+</script>
+
+</body>
+</html>
